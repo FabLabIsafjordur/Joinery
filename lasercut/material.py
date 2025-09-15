@@ -57,9 +57,9 @@ class MaterialProperties(ObjectProperties):
             except ValueError as e:
                 FreeCAD.Console.PrintError(e)
         if not hasattr(self, 'thickness_tolerance'):
-            self.thickness_tolerance = 0.1 * self.thickness
+            self.thickness_tolerance = 0.0
         if not hasattr(self, 'laser_beam_diameter'):
-            self.laser_beam_diameter = self.thickness / 15.0
+            self.laser_beam_diameter = 0.2
         if not hasattr(self, 'new_name'):
             self.new_name = "%s_tab" % kwargs['freecad_object'].Label
         if not hasattr(self, 'hole_width_tolerance'):
