@@ -89,7 +89,7 @@ class TabProperties(helper.ObjectProperties):
         if not hasattr(self, 'screw_length_tol'):
             self.screw_length_tol = 0.5
         if not hasattr(self, 'dog_bone'):
-            self.dog_bone = True
+            self.dog_bone = False
         if not hasattr(self, 'tab_dog_bone'):
             self.tab_dog_bone = False
         if not hasattr(self, 'y_invert'):
