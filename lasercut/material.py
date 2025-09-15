@@ -66,7 +66,7 @@ class MaterialProperties(ObjectProperties):
             self.hole_width_tolerance = 0.0
         # For cross part
         if not hasattr(self, 'dog_bone'):
-            self.dog_bone = True
+            self.dog_bone = False
         if not hasattr(self, 'node_type'):
             self.node_type = self.NODE_NO
         if not hasattr(self, 'node_thickness'):
