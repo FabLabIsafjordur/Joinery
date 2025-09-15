@@ -26,8 +26,8 @@
 from FreeCAD import Gui
 
 
-class LCInterlockingWorkbench (Workbench):
-    MenuText = "Laser Cut Interlocking"
+class LCInterlockingFabisa (Workbench):
+    MenuText = "LCInterlocking Fabisa"
     ToolTip = "Laser cut interlocking assistant"
     Icon = """
 /* XPM */
@@ -76,4 +76,4 @@ static char * laser_xpm[] = {
     def GetClassName(self):
         return "Gui::PythonWorkbench"
  
-Gui.addWorkbench(LCInterlockingWorkbench())
+Gui.addWorkbench(LCInterlockingFabisa())
